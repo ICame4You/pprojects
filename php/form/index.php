@@ -13,19 +13,19 @@
                     <div class="form-group row">
                         <label for="id" class="col-md-4 control-label">Фамилия *</label>
                         <div class="col-md-8">
-                            <input class="form-control" name="surname" type="text" />
+                            <input class="form-control" name="surname" />
                         </div>
                     </div>
                     <div class="form-group row">
                         <label for="id" class="col-md-4 control-label">Имя *</label>
                         <div class="col-md-8">
-                            <input class="form-control" name="name" type="text" />
+                            <input class="form-control" name="name" />
                         </div>
                     </div>
                     <div class="form-group row">
                         <label for="id" class="col-md-4 control-label">Отчество</label>
                         <div class="col-md-8">
-                            <input class="form-control" name="second_name" type="text" />
+                            <input class="form-control" name="second_name" />
                         </div>
                     </div>
                     <div class="form-group row">
@@ -37,7 +37,7 @@
                     <div class="form-group row">
                         <label for="id" class="col-md-4 control-label">День рождения *</label>
                         <div class="col-md-2">
-                            <input class="form-control" name="birthday_day" type="text" placeholder="DD" />
+                            <input class="form-control" name="birthday_day" placeholder="DD" />
                         </div>
                         <div class="col-md-4">
                             <select class="form-control" name="birthday_month">
@@ -56,13 +56,13 @@
                             </select>
                         </div>
                         <div class="col-md-2">
-                            <input class="form-control" name="birthday_year" type="text" placeholder="YYYY" />
+                            <input class="form-control" name="birthday_year" placeholder="YYYY" />
                         </div>
                     </div>
                     <div class="form-group row">
                         <label for="id" class="col-md-4 control-label">Ссылка на сайт</label>
                         <div class="col-md-8">
-                            <input class="form-control" name="url" type="text" />
+                            <input class="form-control" name="url" />
                         </div>
                     </div>
                     <div class="form-group row">
