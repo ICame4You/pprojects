@@ -5,6 +5,19 @@
     <body>
     <div id="content" class="content content-full-width">
 
+        <?php
+        $errors = [
+            1 => 'Заполнены не все поля',
+            2 => 'Вам не исполнилось 18',
+            3 => 'Ссылка на сайт введена в неверном виде',
+            4 => 'Загрузите фотографию с разрешением jpg/png/gif',
+            5 => 'Фотография не должна превышать 200KB'
+        ];
+
+        if (isset($_GET['error_id'])) { ?>
+
+        <?php } ?>
+
         <form method="POST" action="handler.php" class="form-bordered" enctype="multipart/form-data">
             <!-- begin wrapper -->
             <div class="container wrapper">
