@@ -46,6 +46,18 @@ if ($photo['size'] > 200 * 1024) {
     exit;
 }
 
-var_dump($check);
+if ($check) {
+    $photo_destination = 'uploads/';
+    $photo_temp_name = $photo['tmp_name'];
+    $photo_name = $photo['name'];
+    move_uploaded_file($photo_temp_name, $photo_destination.'/'.$photo_name);
 
+    ?>
+    <p>ФИО: <?=$surname.' '.$name.' '.$second_name?></p>
+    <p><img src="uploads/<?=$photo['name']?>" alt="" width="100"></p>
+    <p>Дата рождения: <?=date('Y-m-d', $birthday)?></p>
+    <?php if ($url) { ?><p>Ссылка на сайт: <?= $url ?></p> <?php } ?>
+    <?php if ($description) { ?> <p>Описание: <?= $description ?></p> <?php } ?>
+<?php
+}
 ?>

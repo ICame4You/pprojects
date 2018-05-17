@@ -15,7 +15,11 @@
         ];
 
         if (isset($_GET['error_id'])) { ?>
-
+            <div class="alert alert-warning">
+                <strong>Error!</strong>
+                <?=isset($errors[$_GET['error_id']]) ? $errors[$_GET['error_id']] : ''?>
+                <span class="close" data-dismiss="alert">×</span>
+            </div>
         <?php } ?>
 
         <form method="POST" action="handler.php" class="form-bordered" enctype="multipart/form-data">
