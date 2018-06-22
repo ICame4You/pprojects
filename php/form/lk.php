@@ -1,7 +1,5 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: Sasha S
- * Date: 18.06.2018
- * Time: 18:54
- */
+<?php include 'header.php' ?>
+
+<h1>Привет, Админ</h1>
+
+<?php include 'footer.php' ?>

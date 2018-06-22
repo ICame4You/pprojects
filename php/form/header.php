@@ -1,3 +1,11 @@
+<?php
+    session_start();
+    $uri = $_SERVER['REQUEST_URI'];
+    if (strpos($uri, '/login') == false && !isset($_COOKIE['login'])) {
+        header('Location: login.php');
+    }
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
