@@ -8,3 +8,4 @@ if ($login == 'admin') {
 } else {
     header('Location: login.php?error_id=1');
 }
+test
