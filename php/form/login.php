@@ -1,7 +1,6 @@
 <?php include 'header.php' ?>
 
 <?php
-    $login = isset($_POST['login']) ? $_POST['login'] : "";
     $login_errors = [
         1 => 'Неправильный логин'
     ];
@@ -19,7 +18,7 @@
             <div class="form-group row">
                 <label for="login" class="col-md-4 control-label">Логин</label>
                 <div class="col-md-8">
-                    <input id="login" class="form-control" name="login" value="<?=$login?>"/>
+                    <input id="login" class="form-control" name="login" value="<?=isset($_SESSION['login']) ? $_SESSION['login'] : "";?>"/>
                 </div>
             </div>
             <!--<div class="form-group row">
@@ -28,6 +27,12 @@
                     <input type="password" id="pass" class="form-control" name="pass" />
                 </div>
             </div>-->
+            <div class="form-group row">
+                <input class="form-check-input" name="remember" type="checkbox" id="remember">
+                <label class="form-check-label" for="remember">
+                    Запомнить меня
+                </label>
+            </div>
         </div>
     </div>
 </form>

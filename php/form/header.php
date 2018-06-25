@@ -1,7 +1,8 @@
 <?php
     session_start();
+    $ses = session_id();
     $uri = $_SERVER['REQUEST_URI'];
-    if (strpos($uri, '/login') == false && !isset($_COOKIE['login'])) {
+    if (strpos($uri, '/login') == false && !isset($ses)) {
         header('Location: login.php');
     }
 ?>
